@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;/* disini design bodynya*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("backgroundlogin.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+form {
+    background-color: #f2f2f2;/* disini design warna huruf dan background sampai h2*/
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: fit-content;
+    max-width: 90%;
+    background: rgb(246,44,7);
+    background: linear-gradient(90deg, rgba(246,44,7,1) 0%, rgba(246,44,7,0.9248949579831933) 16%, rgba(3,0,5,0.9192927170868347) 99%);
+}
+h2 {
+    color: #000000;
+    text-align: center;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type=text], 
+input[type=email], 
+input[type=password]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    background: rgb(246,44,7);
+    background: linear-gradient(90deg, rgba(246,44,7,0.9248949579831933) 0%, rgba(3,0,5,0.9192927170868347) 0%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #ffffff;
+}
+/* dibawah ini setingan agar buttonnya hanya dipilih salah satu dalam bentuk button point*/
+input[type=radio]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* dibawah ini agar bentuk website yang responsive mengikuti bentuk layout*/
+@media(max-width: 768px){
+    body{
+        padding: 20px;
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+}
